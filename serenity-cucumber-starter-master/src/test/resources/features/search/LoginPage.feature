@@ -5,7 +5,7 @@ Feature: Login en la página web de OrangeHRM
   Scenario: Inicio de sesión con credenciales válidas
 
     Given "User" abre la página web
-    When Inicia sesión con las credenciales "CB00000015", "epinzo109", "BOGOTA$UAT2025"
+    When Inicia sesión con las credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
     Then Debe iniciar sesión correctamente
 
 #📄 Documentación Archivo: LoginPage.feature
