@@ -8,6 +8,13 @@ Feature: Login en la página web de OrangeHRM
     When Inicia sesión con las credenciales "CB00000015", "epinzo109", "BOGOTA$UAT2025"
     Then Debe iniciar sesión correctamente
 
+  @Caso1
+  Scenario: Cargue de Archivo  de Nomina  por la opcion Produccion
+
+    Given El cliente ingresa a corporate con sus credenciales
+    When  el cliente genera el cargue del archivo de Nomina de forma exitosa
+    Then El sistema muestra mensaje de cargue exitoso
+
 #📄 Documentación Archivo: LoginPage.feature
 #
 #📌 Descripción General:
