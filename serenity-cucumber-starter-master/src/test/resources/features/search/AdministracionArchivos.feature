@@ -1,20 +1,37 @@
 @all
-Feature: Login en la página web de OrangeHRM
+Feature: Cargue de Archivos en Corporate
 
-  @ValidCredentials
-  Scenario: Inicio de sesión con credenciales válidas
-
-    Given "User" abre la página web
-    When Inicia sesión con las credenciales "CB00000015", "epinzo109", "BOGOTA$UAT2025"
-    Then Debe iniciar sesión correctamente
+  //@ValidCredentials
+  //Scenario: Inicio de sesión con credenciales válidas
+  //
+  //Given "User" abre la página web
+  //When Inicia sesión con las credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
+  //Then Debe iniciar sesión correctamente
 
   @Caso1
   Scenario: Cargue de Archivo  de Nomina  por la opcion Produccion
 
-    Given El cliente ingresa a corporate con sus credenciales
-    When  el cliente genera el cargue del archivo de Nomina de forma exitosa
+    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
+    When  el usuario genera el cargue del archivo de Nomina de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
+  @Caso2
+  Scenario : Cargue de Archivo  de Nomina  por la opcion Pruebas
+    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
+    When  el usuario genera el cargue del archivo de Nomina de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
+    Then El sistema muestra mensaje de cargue exitoso
+
+  @Caso3
+  Scenario : Cargue de Archivo  de Nomina  por la opcion Produccion sin check Administrar Cargas EFD
+    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
+    When  el usuario genera el cargue del archivo de Nomina de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
+    Then El sistema muestra mensaje de cargue exitoso
+
+  @Caso4
+  Scenario : Cargue de Archivo  de Nomina  por la opcion Pruebas sin check Administrar Cargas EFD
+    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
+    When  el usuario genera el cargue del archivo de Nomina de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
+    Then El sistema muestra mensaje de cargue exitoso
 #📄 Documentación Archivo: LoginPage.feature
 #
 #📌 Descripción General:
