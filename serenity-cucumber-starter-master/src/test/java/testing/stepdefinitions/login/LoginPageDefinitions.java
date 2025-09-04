@@ -11,8 +11,8 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class LoginPageDefinitions {
-    @When("Inicia sesión con las credenciales")
-    public void iniciasesioconlascredenciales(String codcompania, String idusua, String contrasena) {
+    @When("Inicia sesión con las credenciales {string}, {string}, {string}")
+    public void inicia_sesión_con_las_credenciales(String codcompania, String idusua, String contrasena) {
         OnStage.withCurrentActor(Login.conCredenciales(codcompania, idusua , contrasena));
     }
     @Then("Debe iniciar sesión correctamente")

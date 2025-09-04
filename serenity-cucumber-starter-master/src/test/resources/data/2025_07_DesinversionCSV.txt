@@ -1,0 +1,9 @@
+20250909,N,8300321609,02,000902460,D
+I,7999999910,Beneficiario nit E4 desinversion CSV,5,00450001621,551,44450,I,7999999910,compensacion TRAS-487878
+N,9457956317,Beneficiario nit4 desinversion CSV,2,137299806,007,345500,N,9457956317,informacion adenda enviada 
+I,7999999910,Beneficiario nit E4 desinversion CSV,5,00450001621,007,44450,I,7999999910,compensacion TRAS-487878
+N,9457956317,Beneficiario nit4 desinversion CSV,2,137299806,019,1258963,N,9457956317,informacion adenda enviada 
+I,7999999910,Beneficiario nit E4 desinversion CSV,5,00450001621,007,44450,I,7999999910,compensacion TRAS-487878
+N,9457956317,Beneficiario nit4 desinversion CSV,2,137299806,019,1258963,N,9457956317,informacion adenda enviada 
+I,7999999910,Beneficiario nit E4 desinversion CSV,5,00450001621,007,44450,I,7999999910,compensacion TRAS-487878
+N,9457956317,Beneficiario nit4 desinversion CSV,2,137299806,019,1258963,N,9457956317,informacion adenda enviada 
