@@ -36,7 +36,7 @@ public class NominaCaso1 implements Task {
                 Click.on(CarguePage.TIPO_AMBIENTE),
 
                 // Paso 6: Seleccionar ambiente de producción
-                Click.on(CarguePage.SELECT_TIPO_AMBIENTE),
+                Click.on(CarguePage.SELECT_TIPO_AMBIENTE_PROD),
 
                 // Paso 7: Aceptar términos de confidencialidad
                 Click.on(CarguePage.CHECK_CONFIDENCIALIDAD),
