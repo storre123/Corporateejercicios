@@ -27,8 +27,11 @@ public class CarguePage {
     public static final Target TIPO_AMBIENTE = Target.the("Opcion para seleccionar tipo de ambiente")
             .located(By.id("environmentType_displayText"));//*[@id=""]
 
-    public static final Target SELECT_TIPO_AMBIENTE = Target.the("Opcion para seleccionar ambiente de produccion")
-            .located(By.id("environmentType_option_production"));//*[@id="environmentType_option_production"]
+    public static final Target SELECT_TIPO_AMBIENTE_PROD = Target.the("Opcion para seleccionar ambiente de produccion")
+            .located(By.id("environmentType_option_production"));
+
+    public static final Target SELECT_TIPO_AMBIENTE_QA = Target.the("Opcion para seleccionar ambiente de QA")
+            .located(By.id("environmentType_option_test"));
 
     public static final Target CHECK_CONFIDENCIALIDAD = Target.the("CHECK para aceptar terminos de confidencialidad")
             .located(By.id("input-confidential-checkbox_checkinput-background"));//*[@id="input-confidential-checkbox_checkinput-background"]/svg
