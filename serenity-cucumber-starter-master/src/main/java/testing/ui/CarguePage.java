@@ -10,7 +10,7 @@ public class CarguePage {
             .located(By.id("navigation_more"));
 
 
-    public static final Target BUTTON_SERVICIO_ARCHIVOS = Target.the("Boton servicio de archivos")
+    public static final Target BUTTON_SERVICIO_ARCHIVOS = Target.the("Boton servicio de archivos") //Variable constante en mayus separada por guion bajo
             .located(By.id("navigation_collapsed_0"));
 
 
