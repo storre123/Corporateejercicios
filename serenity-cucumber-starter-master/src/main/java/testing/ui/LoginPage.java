@@ -5,13 +5,13 @@ import org.openqa.selenium.By;
 
 public class LoginPage {
     public static final Target CODCOMPANIA = Target.the("campo código de compañía")
-            .located(By.xpath("//input[@placeholder='Ingresar código vigente']"));
+            .located(By.id( "model_organizationId"));
 
     public static final Target IDUSUA = Target.the("campo ID de usuario")
-            .located(By.xpath("//input[@placeholder='Ingresar ID registrado']"));
+            .located(By.id("model_userId"));
 
     public static final Target CONTRASENA = Target.the("campo contraseña")
-            .located(By.xpath("//input[@placeholder='Ingresar Contraseña']"));
+            .located(By.id("model_password"));
 
     public static final Target IDIOMA = Target.the("desplegable de idioma")
             .located(By.id("model_language_displayText"));

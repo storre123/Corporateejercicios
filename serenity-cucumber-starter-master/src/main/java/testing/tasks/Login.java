@@ -8,26 +8,25 @@ import org.openqa.selenium.NoSuchElementException;
 import testing.ui.LoginPage;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 
 public class Login implements Task {
 
-    private final String codcompania;
-    private final String idusua;
+    private final String codCompania;
+    private final String idUsua;
     private final String contrasena;
 
-    public Login(String idusua, String contrasena, String codcompania) {
-        this.codcompania = codcompania;
-        this.idusua = idusua;
+    public Login(String idUsua, String contrasena, String codCompania) {
+        this.codCompania = codCompania;
+        this.idUsua = idUsua;
         this.contrasena = contrasena;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(this.codcompania).into(LoginPage.CODCOMPANIA),
-                Enter.theValue(this.idusua).into(LoginPage.IDUSUA),
+                Enter.theValue(this.codCompania).into(LoginPage.CODCOMPANIA),
+                Enter.theValue(this.idUsua).into(LoginPage.IDUSUA),
                 Enter.theValue(this.contrasena).into(LoginPage.CONTRASENA),
                 Click.on(LoginPage.IDIOMA),
                 Click.on(LoginPage.OPCION_IDIOMA),
