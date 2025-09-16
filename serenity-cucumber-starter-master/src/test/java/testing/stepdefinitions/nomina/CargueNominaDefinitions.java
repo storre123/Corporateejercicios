@@ -48,13 +48,42 @@ public class CargueNominaDefinitions
         OnStage.theActorInTheSpotlight().attemptsTo(
                 NominaCaso4.conRuta(rutaArchivo)
         );
-
     }
 
-    @Then("El sistema muestra mensaje de cargue exitoso")
+    @When("el Usuario genera el cargue del archivo de Proveedores por la opcion produccion de forma exitosa {string}")
+        public void elUsuarioGeneraElCargueDelArchivoDeProveedoresPorLaOpcionProduccionDeFormaExitosa(String rutaArchivo) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                ProveedoresCaso1.conRuta(rutaArchivo)
+        );
+        }
+
+    @When("el Usuario genera el cargue del archivo de Proveedores por la opcion pruebas de forma exitosa {string}")
+        public void elUsuarioGeneraElCargueDelArchivoDeProveedoresPorLaOpcionPruebasDeFormaExitosa(String rutaArchivo) {
+
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                ProveedoresCaso2.conRuta(rutaArchivo)
+        );
+
+        }
+
+    @When("el Usuario genera el cargue del archivo de Proveedores por la opcion Produccion sin check de forma exitosa {string}")
+        public void elUsuarioGeneraElCargueDelArchivoDeProveedoresPorLaOpcionProduccionSinCheckDeFormaExitosa(String rutaArchivo) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                ProveedoresCaso3.conRuta(rutaArchivo)
+        );
+        }
+
+    @When("el Usuario genera el cargue del archivo de Proveedores por la opcion Pruebas sin check de forma exitosa {string}")
+        public void elUsuarioGeneraElCargueDelArchivoDeProveedoresPorLaOpcionPruebasSinCheckDeFormaExitosa(String rutaArchivo) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                ProveedoresCaso4.conRuta(rutaArchivo)
+        );
+        }
+
+
+        @Then("El sistema muestra mensaje de cargue exitoso")
     public void el_sistema_muestra_mensaje_de_cargue_exitoso() {
         theActorInTheSpotlight().should(seeThat(SuccessCargue.cargueNominaExitoso()));
     }
-
 
     }
