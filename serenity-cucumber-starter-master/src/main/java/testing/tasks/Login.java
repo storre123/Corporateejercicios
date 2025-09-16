@@ -49,5 +49,3 @@ public class Login implements Task {
         return instrumented(Login.class, idusua, contrasena, codcompania);
     }
 }
-
-
