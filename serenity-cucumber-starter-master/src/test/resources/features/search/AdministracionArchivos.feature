@@ -1,37 +1,46 @@
 @all
 Feature: Cargue de Archivos en Corporate
 
-  //@ValidCredentials
-  //Scenario: Inicio de sesión con credenciales válidas
-  //
-  //Given "User" abre la página web
-  //When Inicia sesión con las credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
-  //Then Debe iniciar sesión correctamente
-
-  @Caso1
+ Background:
+   Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
   Scenario: Cargue de Archivo  de Nomina  por la opcion Produccion
-
-    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
     When  el usuario genera el cargue del archivo de Nomina por la opcion produccion de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-  @Caso2
+
   Scenario: Cargue de Archivo  de Nomina  por la opcion Pruebas
-    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
     When  el usuario genera el cargue del archivo de Nomina por la opcion pruebas de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-  @Caso3
+
   Scenario: Cargue de Archivo  de Nomina  por la opcion Produccion sin check Administrar Cargas EFD
-    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
     When  el usuario genera el cargue del archivo de Nomina por la opcion Produccion sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-  @Caso4
+
   Scenario: Cargue de Archivo  de Nomina  por la opcion Pruebas sin check Administrar Cargas EFD
-    Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
     When  el usuario genera el cargue del archivo de Nomina por la opcion Pruebas sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
+
+#------------------------------------------------------------Cargue de Proveedores------------------------------------------------------------
+
+  Scenario : Cargue de Archivo  de Proveedores  por la opcion Produccion
+    When  el Usuario genera el cargue del archivo de Proveedores por la opcion produccion de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
+    Then El sistema muestra mensaje de cargue exitoso
+
+  Scenario : Cargue de Archivo  de Proveedores  por la opcion Pruebas
+    When  el Usuario genera el cargue del archivo de Proveedores por la opcion pruebas de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
+    Then El sistema muestra mensaje de cargue exitoso
+
+  Scenario : Cargue de Archivo  de Proveedores  por la opcion Produccion sin check Administrar Cargas EFD
+    When  el Usuario genera el cargue del archivo de Proveedores por la opcion Produccion sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
+    Then El sistema muestra mensaje de cargue exitoso
+
+  Scenario : Cargue de Archivo  de Proveedores  por la opcion Pruebas sin check Administrar Cargas EFD
+    When  el Usuario genera el cargue del archivo de Proveedores por la opcion Pruebas sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
+    Then El sistema muestra mensaje de cargue exitoso
+
+
 #📄 Documentación Archivo: LoginPage.feature
 #
 #📌 Descripción General:
