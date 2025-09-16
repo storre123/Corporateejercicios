@@ -14,7 +14,7 @@ public class SuccessCargue implements Question<Boolean>{
         return true;
     }
 
-    public static SuccessCargue cargueExitoso() {
+    public static SuccessCargue cargueNominaExitoso() {
         return new SuccessCargue();
     }
 }

@@ -2,7 +2,7 @@
 Feature: Cargue de Archivos en Corporate
 
  Background:
-   Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20251*;"
+   Given "User" ingresa a corporate con sus credenciales "CB00000015", "Uat2025$kcast15", "Pruebas123*"
 
   Scenario: Cargue de Archivo  de Nomina  por la opcion Produccion
     When  el usuario genera el cargue del archivo de Nomina por la opcion produccion de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
