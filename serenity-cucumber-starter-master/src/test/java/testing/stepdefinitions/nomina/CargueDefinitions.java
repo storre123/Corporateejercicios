@@ -20,7 +20,7 @@ public class CargueDefinitions
 
         OnStage.theActorCalled(actor);
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.browserOn().thePageNamed(PAGE_URL));
-        OnStage.theActorInTheSpotlight().wasAbleTo(Login.conCredenciales( "CB00000015", "epinzo109", "BOGOTA$UAT20250*"));
+        OnStage.withCurrentActor(Login.conCredenciales(codcompania, idusua , contrasena));
 
     }
     //--------------------  Nomina  --------------------

@@ -2,7 +2,8 @@
 Feature: Cargue de Archivos en Corporate
 
  Background:
-   Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20250*"
+   Given "User" ingresa a corporate con sus credenciales "CB00000015", "epinzo109", "BOGOTA$UAT20251*;"
+
   Scenario: Cargue de Archivo  de Nomina  por la opcion Produccion
     When  el usuario genera el cargue del archivo de Nomina por la opcion produccion de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
@@ -22,21 +23,21 @@ Feature: Cargue de Archivos en Corporate
     When  el usuario genera el cargue del archivo de Nomina por la opcion Pruebas sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_01_Nomina.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-#------------------------------------------------------------Cargue de Proveedores------------------------------------------------------------
+#Cargue de Proveedores
 
-  Scenario : Cargue de Archivo  de Proveedores  por la opcion Produccion
+  Scenario: Cargue de Archivo  de Proveedores  por la opcion Produccion
     When  el Usuario genera el cargue del archivo de Proveedores por la opcion produccion de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-  Scenario : Cargue de Archivo  de Proveedores  por la opcion Pruebas
+  Scenario: Cargue de Archivo  de Proveedores  por la opcion Pruebas
     When  el Usuario genera el cargue del archivo de Proveedores por la opcion pruebas de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-  Scenario : Cargue de Archivo  de Proveedores  por la opcion Produccion sin check Administrar Cargas EFD
+  Scenario: Cargue de Archivo  de Proveedores  por la opcion Produccion sin check Administrar Cargas EFD
     When  el Usuario genera el cargue del archivo de Proveedores por la opcion Produccion sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
-  Scenario : Cargue de Archivo  de Proveedores  por la opcion Pruebas sin check Administrar Cargas EFD
+  Scenario: Cargue de Archivo  de Proveedores  por la opcion Pruebas sin check Administrar Cargas EFD
     When  el Usuario genera el cargue del archivo de Proveedores por la opcion Pruebas sin check de forma exitosa "D:\Automatizacion\serenity-cucumber-starter-master 4\serenity-cucumber-starter-master\src\test\resources\data\2025_02_proveedores.txt"
     Then El sistema muestra mensaje de cargue exitoso
 
